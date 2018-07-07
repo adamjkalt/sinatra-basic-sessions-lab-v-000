@@ -16,5 +16,6 @@ end
       params[:checkout][:item].each do |item|
        @items << item[:name]
        end
+     end
 
 end
