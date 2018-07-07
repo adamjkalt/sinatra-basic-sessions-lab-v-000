@@ -12,9 +12,9 @@ end
     end
 
     post '/checkout' do
-      @items = []
+      @session[item] = []
       params[:checkout][:item].each do |item|
-       @items << item[:name]
+       @session[item] << item[:name]
        end
      end
 
