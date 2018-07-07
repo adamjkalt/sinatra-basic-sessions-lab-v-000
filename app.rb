@@ -12,7 +12,7 @@ end
     end
 
     post '/checkout' do
-      @item = params[:checkout][:name]
+      @item = params[:checkout][:item]
        end
 
 end
