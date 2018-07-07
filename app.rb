@@ -12,6 +12,9 @@ end
     end
 
     post '/checkout' do
+      @items = []
+      params[:team][:hero].each do |hero|
+       @hero_names << hero[:name]
       @item = params[:checkout][:item]
        end
 
