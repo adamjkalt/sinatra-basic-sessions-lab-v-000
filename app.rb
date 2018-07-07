@@ -12,11 +12,7 @@ end
     end
 
     post '/checkout' do
-      binding.pry
-      @session[:item] = []
-      params[:checkout][:item].each do |item|
-       @session[:item] << item[:name]
-       end
+      @session[:item] = params[:item]
      end
 
 end
